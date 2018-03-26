@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.bayu1993.binarbasicactivity.MainActivity">
+
+    <EditText
+        android:id="@+id/edt_input_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input nama"
+        android:inputType="text"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_centerInParent="true"/>
+    <EditText
+        android:id="@+id/edt_input_umur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input umur"
+        android:inputType="number"
+        android:layout_below="@id/edt_input_nama"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Ok"/>
+
+</RelativeLayout>
