@@ -12,6 +12,7 @@ public class OnboardingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_onboarding);
         SharedPreferences settings = getSharedPreferences(PREFERENCESNAME, MODE_PRIVATE);
         Button btnNext = (Button)findViewById(R.id.btn_next);
