@@ -9,21 +9,26 @@ import android.os.Bundle;
 import android.util.Log;
 
 public class SplashscreenActivity extends AppCompatActivity {
+    //timer 3s
     private final int TIMEDURATION = 3000;
+    //name sharepreference
     private final String PREFERENCESNAME = "MySharePreferences";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashscreen);
+        //hide toolbar
         getSupportActionBar().hide();
         //read
         final boolean cekOnBoardingActivity;
         SharedPreferences sharedPreferences = getSharedPreferences(PREFERENCESNAME,MODE_PRIVATE);
         cekOnBoardingActivity = sharedPreferences.getBoolean("cekOnboarding",false);
         Log.d("cek On boarding", "status : "+cekOnBoardingActivity);
+        //handler splash selama 3s
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                //condition kalo false masuk ke onboarding kalo true langsung masuk ke main
                 if (cekOnBoardingActivity){
                     Intent intentToOnboarding = new Intent(SplashscreenActivity.this,MainActivity.class);
                     startActivity(intentToOnboarding);

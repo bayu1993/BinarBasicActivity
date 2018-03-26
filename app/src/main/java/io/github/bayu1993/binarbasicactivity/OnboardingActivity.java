@@ -8,18 +8,23 @@ import android.view.View;
 import android.widget.Button;
 
 public class OnboardingActivity extends AppCompatActivity {
+    //name sharepreferences
     private final String PREFERENCESNAME = "MySharePreferences";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //hide toolbar
         getSupportActionBar().hide();
         setContentView(R.layout.activity_onboarding);
-        SharedPreferences settings = getSharedPreferences(PREFERENCESNAME, MODE_PRIVATE);
+        //instansiasi
         Button btnNext = (Button)findViewById(R.id.btn_next);
+
+        SharedPreferences sharedPreferences = getSharedPreferences(PREFERENCESNAME, MODE_PRIVATE);
         // Writing data to SharedPreferences
-        SharedPreferences.Editor editor = settings.edit();
+        SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putBoolean("cekOnboarding", true);
         editor.commit();
+        //event onclick
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
