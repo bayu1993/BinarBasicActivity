@@ -19,6 +19,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".OnboardingActivity"/>
+        <activity android:name=".SharePref"/>
     </application>
 
 </manifest>

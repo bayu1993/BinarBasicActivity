@@ -31,7 +31,6 @@ public class DetailActivity extends AppCompatActivity {
         private IntentKey(){
 
         }
-
         //public static final String RESULT = "DetailActivity.RESULT";
         public static final String DATASTUDENT = "DetailActivity.DATASTUDENT";
 
