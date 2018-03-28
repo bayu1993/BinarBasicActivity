@@ -7,15 +7,13 @@ import android.os.Bundle;
 
 public class SplashscreenActivity extends AppCompatActivity {
     //timer 3s
-    private final int TIMEDURATION = 3000;
+    private static final int TIMEDURATION = 3000;
     private SharePref sharePref;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashscreen);
         initView();
-        //hide toolbar
-        getSupportActionBar().hide();
         //read
         final Boolean state = sharePref.getStatus();
         //handler splash selama 3s
