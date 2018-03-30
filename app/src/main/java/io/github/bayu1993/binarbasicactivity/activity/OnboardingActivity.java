@@ -85,7 +85,7 @@ public class OnboardingActivity extends AppCompatActivity {
         if (current < layout.length) {
             myViewPager.setCurrentItem(current);
         } else {
-            btnNextAction();
+            btnSkipAction();
         }
     }
 
