@@ -15,7 +15,9 @@ public class SharePref {
         sharedpreferences = context.getSharedPreferences(PREFERENCE_NAME, Context.MODE_PRIVATE);
     }
 
-    public boolean getStatus() {
+    public boolean getStatus(
+
+    ) {
         return sharedpreferences.getBoolean("statusOnBoarding", false);
     }
 

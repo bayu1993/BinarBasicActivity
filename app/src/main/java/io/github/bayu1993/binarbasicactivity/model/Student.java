@@ -1,4 +1,4 @@
-package io.github.bayu1993.binarbasicactivity;
+package io.github.bayu1993.binarbasicactivity.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

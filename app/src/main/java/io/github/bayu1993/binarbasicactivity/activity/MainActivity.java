@@ -1,4 +1,4 @@
-package io.github.bayu1993.binarbasicactivity;
+package io.github.bayu1993.binarbasicactivity.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import io.github.bayu1993.binarbasicactivity.R;
+import io.github.bayu1993.binarbasicactivity.model.Student;
 
 public class MainActivity extends AppCompatActivity {
 

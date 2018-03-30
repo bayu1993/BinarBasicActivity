@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context="io.github.bayu1993.binarbasicactivity.SplashscreenActivity">
+    tools:context="io.github.bayu1993.binarbasicactivity.activity.SplashscreenActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -20,17 +20,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@null" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginBottom="68dp"
-        android:text="Jendela"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:visibility="visible"
+        android:text="@string/apps_title"
         android:textColor="@color/colorTitle"
+        android:textSize="24sp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

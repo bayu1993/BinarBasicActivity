@@ -1,9 +1,12 @@
-package io.github.bayu1993.binarbasicactivity;
+package io.github.bayu1993.binarbasicactivity.activity;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import io.github.bayu1993.binarbasicactivity.R;
+import io.github.bayu1993.binarbasicactivity.SharePref;
 
 public class SplashscreenActivity extends AppCompatActivity {
     //timer 3s
