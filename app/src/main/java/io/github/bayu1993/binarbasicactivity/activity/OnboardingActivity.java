@@ -99,10 +99,10 @@ public class OnboardingActivity extends AppCompatActivity {
             addBottomDots(position);
             if (position == layout.length - 1) {
                 btnNext.setText(getString(R.string.start));
-                btnSkip.setVisibility(View.VISIBLE);
+                btnSkip.setVisibility(View.INVISIBLE);
             } else {
                 btnNext.setText(getString(R.string.next));
-                btnSkip.setVisibility(View.INVISIBLE);
+                btnSkip.setVisibility(View.VISIBLE);
             }
         }
 
